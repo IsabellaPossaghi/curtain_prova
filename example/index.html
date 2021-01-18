@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="../curtain.css">
+    <!-- <link rel="stylesheet" href="base.css"> -->
+</head>
+<body>
+
+<ol class="curtains">
+
+        <header data-fade="550" data-slow-scroll="3">
+            <h1>curtain.js</h1>
+
+        </header>
+    </li>
+    <li id="section-2">
+        <article>
+            <h4>What's Curtain.js?</h4>
+
+        </article>
+    </li>
+    <li id="section-3">
+        <section class="photos">
+            <div class="fixed">
+                <h4>Here's a fixed title</h4>
+
+        </section>
+    </li>
+    <li id="section-4">
+        <section class="download">
+            <h1>Interested?</h1>
+            <a href="#">download on github</a>
+        </section>
+    </li>
+</ol>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../curtain.js"></script>
+<script>
+    $(function(){
+       $('.curtains').curtain({
+           scrollSpeed: 300,
+           controls: '.menu',
+           curtainLinks: '.curtain-links',
+           nextSlide: function(){
+            console.log("ok");
+           }
+       });
+    });
+</script>
+</body>
+</html>
